@@ -3,7 +3,7 @@
 body {
   margin: 0;
   font-family: 'Montserrat', sans-serif;
-  background: linear-gradient(135deg, #ffe5ec 0%, #ffc2d1 100%);
+  background: #0a060c;
   overflow: hidden;
   height: 100vh;
   display: flex;
