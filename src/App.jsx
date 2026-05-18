@@ -9,21 +9,21 @@ export default function App() {
   const currentTrackIndexRef = useRef(0);
 
   const playlist = [
-    '/Potential.mp3',
-    '/Slow Down.mp3',
-    '/Бальзам.mp3',
-    '/WRONG.mp3',
-    '/Залежність [9cX5pbktgf8].mp3',
-    '/Friends.mp3',
-    '/Вкрали (Мамо).mp3',
-    '/НА КИЛИМІ.mp3',
-    '/Спитай у чата джипіті.mp3',
-    '/ТАНУТАНУТА.mp3',
-    '/ТЕХНО.mp3',
-    '/ШИПИ.mp3',
-    '/ШОВКОВИЦЯ.mp3',
-    '/якщо це не по-справжньому у.mp3',
-    '/São Paulo.mp3'
+    'Potential.mp3',
+    'Slow Down.mp3',
+    'Бальзам.mp3',
+    'WRONG.mp3',
+    'Залежність [9cX5pbktgf8].mp3',
+    'Friends.mp3',
+    'Вкрали (Мамо).mp3',
+    'НА КИЛИМІ.mp3',
+    'Спитай у чата джипіті.mp3',
+    'ТАНУТАНУТА.mp3',
+    'ТЕХНО.mp3',
+    'ШИПИ.mp3',
+    'ШОВКОВИЦЯ.mp3',
+    'якщо це не по-справжньому у.mp3',
+    'São Paulo.mp3'
   ];
 
   const handleStart = () => {
@@ -240,7 +240,7 @@ export default function App() {
       position: 'relative', 
       width: '100vw', 
       height: '100dvh', 
-      backgroundImage: 'linear-gradient(rgba(10, 6, 12, 0.82), rgba(10, 6, 12, 0.9)), url(/fav.jpg)', 
+      backgroundImage: 'linear-gradient(rgba(10, 6, 12, 0.82), rgba(10, 6, 12, 0.9)), url(fav.jpg)', 
       backgroundSize: 'cover', 
       backgroundPosition: 'center', 
       backgroundRepeat: 'no-repeat',
@@ -311,7 +311,7 @@ export default function App() {
           animation: 'scaleUpIn 0.8s cubic-bezier(0.175, 0.885, 0.32, 1.2) forwards'
         }}>
           <div style={{
-            backgroundImage: 'linear-gradient(rgba(10, 6, 12, 0.6), rgba(10, 6, 12, 0.75)), url(/fov.jpg)',
+            backgroundImage: 'linear-gradient(rgba(10, 6, 12, 0.6), rgba(10, 6, 12, 0.75)), url(fov.jpg)',
             backgroundSize: 'auto', 
             backgroundPosition: 'center', 
             backgroundRepeat: 'no-repeat',
