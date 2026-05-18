@@ -254,8 +254,8 @@ export default function App() {
           100% { box-shadow: 0 0 10px rgba(255, 77, 109, 0.2); border-color: rgba(255, 77, 109, 0.3); }
         }
         @keyframes scaleUpIn {
-          from { opacity: 0; transform: translate(-50%, -50%) scale(0.92); }
-          to { opacity: 1; transform: translate(-50%, -50%) scale(1); }
+          from { opacity: 0; transform: scale(0.92); }
+          to { opacity: 1; transform: scale(1); }
         }
         .premium-btn {
           animation: glowPulse 2.5s infinite ease-in-out;
@@ -303,46 +303,52 @@ export default function App() {
         </div>
       )}
 
+      {}
       {scene === 'words' && (
         <div style={{
-          position: 'absolute', top: '50%', left: '50%', transform: 'translate(-50%, -50%)',
-          width: '88%', maxWidth: '420px', zIndex: 30,
-          fontFamily: "'Montserrat', sans-serif",
-          animation: 'scaleUpIn 0.8s cubic-bezier(0.175, 0.885, 0.32, 1.2) forwards'
+          position: 'absolute', top: 0, left: 0, width: '100%', height: '100%',
+          zIndex: 30, overflowY: 'auto', display: 'flex', justifyContent: 'center',
+          padding: '40px 0', boxSizing: 'border-box', WebkitOverflowScrolling: 'touch'
         }}>
           <div style={{
-            backgroundImage: 'linear-gradient(rgba(10, 6, 12, 0.6), rgba(10, 6, 12, 0.75)), url(fov.jpg)',
-            backgroundSize: 'auto', 
-            backgroundPosition: 'center', 
-            backgroundRepeat: 'no-repeat',
-            padding: '40px 25px', borderRadius: '35px', 
-            boxShadow: '0 30px 60px rgba(0,0,0,0.6), inset 0 0 15px rgba(255,255,255,0.3)',
-            border: '2px solid rgba(255, 255, 255, 0.15)', 
-            textAlign: 'center',
-            overflow: 'hidden' 
+            width: '88%', maxWidth: '420px', margin: 'auto',
+            fontFamily: "'Montserrat', sans-serif",
+            animation: 'scaleUpIn 0.8s cubic-bezier(0.175, 0.885, 0.32, 1.2) forwards'
           }}>
-            <h2 style={{ 
-              fontSize: '2.5rem', 
-              color: '#ffffff', 
-              margin: '0 0 5px 0', 
-              fontFamily: "'Great Vibes', cursive",
-              textShadow: '0 2px 10px rgba(255, 77, 109, 0.8)'
+            <div style={{
+              backgroundImage: 'linear-gradient(rgba(10, 6, 12, 0.6), rgba(10, 6, 12, 0.75)), url(fov.jpg)',
+              backgroundSize: 'auto', 
+              backgroundPosition: 'center', 
+              backgroundRepeat: 'no-repeat',
+              padding: '40px 25px', borderRadius: '35px', 
+              boxShadow: '0 30px 60px rgba(0,0,0,0.6), inset 0 0 15px rgba(255,255,255,0.3)',
+              border: '2px solid rgba(255, 255, 255, 0.15)', 
+              textAlign: 'center',
+              overflow: 'hidden' 
             }}>
-              Я тебе дуже сильно люблю сонечко 😘❤️🥰
-            </h2>
-            <div style={{ color: '#ffb3c1', fontSize: '0.85rem', marginBottom: '20px', letterSpacing: '4px' }}>
-              ✨ 🤍 ✨
+              <h2 style={{ 
+                fontSize: '2.5rem', 
+                color: '#ffffff', 
+                margin: '0 0 5px 0', 
+                fontFamily: "'Great Vibes', cursive",
+                textShadow: '0 2px 10px rgba(255, 77, 109, 0.8)'
+              }}>
+                Я тебе дуже сильно люблю сонечко 😘❤️🥰
+              </h2>
+              <div style={{ color: '#ffb3c1', fontSize: '0.85rem', marginBottom: '20px', letterSpacing: '4px' }}>
+                ✨ 🤍 ✨
+              </div>
+              <p style={{
+                color: '#fff0f3', 
+                fontSize: '1rem', lineHeight: '1.65',
+                whiteSpace: 'pre-line', fontWeight: '500', textAlign: 'left', margin: 0,
+                textShadow: '0 1px 3px rgba(0,0,0,0.5)'
+              }}>
+                ❣️🩷 З днем народження кохана! ❤️‍🔥❣️ {"\n\n"}
+                Я вітаю з твоїми 20 роками і ніколи не забувай наскільки ти особлива, чарівна, гарна, неймовірна, сексуальна, добра, щира, весела, приємна і що саме головне ти є ти!🤗😊 Залишайся попри все собою!😚💝 Я тебе завжди підтримаю і буду на твоїй стороні, я тебе люблю всім серцем і хочу щоб твої бажання завжди виконувалися та любі складності в житті приносили не сум чи печаль, а тільки розуміння, що це новий досвід який знадобиться в житті!🫶❤️ І побуду трішки егоїстом і попрошу ніколи не здаватися заради себе і заради мене 😂😘 {"\n\n"}
+                Я дуже вдячний, що ти є в моєму житті і я дуже щасливий, що ми разом!🥰💖 Я тебе дуже дуже дуже дуже дуже дуже сильно люблю сонечко 😘❤️❤️
+              </p>
             </div>
-            <p style={{
-              color: '#fff0f3', 
-              fontSize: '1rem', lineHeight: '1.65',
-              whiteSpace: 'pre-line', fontWeight: '500', textAlign: 'left', margin: 0,
-              textShadow: '0 1px 3px rgba(0,0,0,0.5)'
-            }}>
-              ❣️🩷 З днем народження кохана! ❤️‍🔥❣️ {"\n\n"}
-              Я вітаю з твоїми 20 роками і ніколи не забувай наскільки ти особлива, чарівна, гарна, неймовірна, сексуальна, добра, щира, весела, приємна і що саме головне ти є ти!🤗😊 Залишайся попри все собою!😚💝 Я тебе завжди підтримаю і буду на твоїй стороні, я тебе люблю всім серцем і хочу щоб твої бажання завжди виконувалися та любі складності в житті приносили не сум чи печаль, а тільки розуміння, що це новий досвід який знадобиться в житті!🫶❤️ І побуду трішки егоїстом і попрошу ніколи не здаватися заради себе і заради мене 😂😘 {"\n\n"}
-              Я дуже вдячний, що ти є в моєму житті і я дуже щасливий, що ми разом!🥰💖 Я тебе дуже дуже дуже дуже дуже дуже сильно люблю сонечко 😘❤️❤️
-            </p>
           </div>
         </div>
       )}
