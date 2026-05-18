@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&family=Great+Vibes&display=swap');
+
+body {
+  margin: 0;
+  font-family: 'Montserrat', sans-serif;
+  background: linear-gradient(135deg, #ffe5ec 0%, #ffc2d1 100%);
+  overflow: hidden;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.fancy-title {
+  font-family: 'Great Vibes', cursive;
+  font-size: 3rem;
+  color: #ff4d6d;
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+@keyframes floatUp {
+  0% { transform: translateY(100vh) scale(0) rotate(0deg); opacity: 1; }
+  100% { transform: translateY(-10vh) scale(1) rotate(360deg); opacity: 0; }
+}
+
+.heart {
+  position: absolute;
+  color: #ff4d6d;
+  pointer-events: none;
+  animation: floatUp linear infinite;
+}
